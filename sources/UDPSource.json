@@ -1,0 +1,23 @@
+{
+  "activationConstraint" : "",
+  "active" : true,
+  "config" : {
+    "udpSourceConfig" : {
+      "general" : {
+        "listenAddress" : "localhost",
+        "listenPort" : 3141
+      },
+      "incoming" : {
+        "passPureMapIn" : true
+      },
+      "outgoing" : {
+        "passPureMapOut" : true,
+        "targetAddress" : "localhost",
+        "targetPort" : 1234
+      }
+    }
+  },
+  "direction" : "BOTH",
+  "name" : "UDPSource",
+  "type" : "UDP"
+}

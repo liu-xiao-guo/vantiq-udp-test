@@ -1,0 +1,13 @@
+PROCEDURE publishToUDP()
+
+try {
+    // Creating the message to send to UDPSource
+    var myMessage = "This is an example message"
+    
+    // Publishing message to source, using a field called "msg" (could be named anything else)
+    PUBLISH {"msg":myMessage} TO SOURCE UDPSource 
+    
+} catch (error) {
+    // Catching any errors and throwing the exception.
+    exception(error.code, error.message)
+}

@@ -1,0 +1,158 @@
+{
+  "links" : [ {
+    "source" : "source/UDPSource",
+    "target" : "rule/UDP_NOTIFICATION"
+  }, {
+    "source" : "procedure/publishToUDP",
+    "target" : "source/UDPSource"
+  } ],
+  "name" : "UDPDemo",
+  "options" : {
+    "description" : "",
+    "filterBitArray" : "ffffffffffffffffffffffffffffffff",
+    "isModeloProject" : true,
+    "layoutStyle" : "custom",
+    "showGrid" : true,
+    "v" : 2
+  },
+  "resources" : [ {
+    "inventory" : {
+      "appmodelHash" : [ ],
+      "appmodels" : [ ],
+      "collaborationHash" : [ ],
+      "collaborations" : [ ],
+      "pagesetHash" : [ ],
+      "pagesets" : [ ],
+      "procedureHash" : [ ],
+      "procedures" : [ ],
+      "sourceHash" : [ ],
+      "sources" : [ ],
+      "topicHash" : [ ],
+      "topics" : [ ],
+      "typeHash" : [ ],
+      "types" : [ ]
+    },
+    "label" : "UDPSource",
+    "name" : "UDPSource",
+    "node" : {
+      "x" : 353.22319072094876,
+      "y" : 185.98580796834355
+    },
+    "timestamp" : "2018-12-19T00:52:21.149Z",
+    "type" : 4
+  }, {
+    "inventory" : {
+      "appmodelHash" : [ ],
+      "appmodels" : [ ],
+      "collaborationHash" : [ ],
+      "collaborations" : [ ],
+      "pagesetHash" : [ ],
+      "pagesets" : [ ],
+      "procedureHash" : [ "out" ],
+      "procedures" : [ "exception" ],
+      "sourceHash" : [ "in" ],
+      "sources" : [ "UDPSource" ],
+      "topicHash" : [ ],
+      "topics" : [ ],
+      "typeHash" : [ ],
+      "types" : [ ]
+    },
+    "name" : "UDP_NOTIFICATION",
+    "node" : {
+      "x" : 353.2300881615784,
+      "y" : 317.20016980101815
+    },
+    "timestamp" : "2018-12-19T01:01:43.606Z",
+    "type" : 2
+  }, {
+    "inventory" : {
+      "appmodelHash" : [ ],
+      "appmodels" : [ ],
+      "collaborationHash" : [ ],
+      "collaborations" : [ ],
+      "pagesetHash" : [ ],
+      "pagesets" : [ ],
+      "procedureHash" : [ "out" ],
+      "procedures" : [ "exception" ],
+      "sourceHash" : [ "out" ],
+      "sources" : [ "UDPSource" ],
+      "topicHash" : [ ],
+      "topics" : [ ],
+      "typeHash" : [ ],
+      "types" : [ ]
+    },
+    "name" : "publishToUDP",
+    "node" : {
+      "x" : 353.3279097791409,
+      "y" : 46.22569515833765
+    },
+    "timestamp" : "2018-12-19T00:14:02.001Z",
+    "type" : 3
+  } ],
+  "tools" : [ {
+    "isPinned" : false,
+    "name" : "Project Resource Graph",
+    "pane" : {
+      "h" : 409,
+      "w" : 710.5,
+      "x" : 20,
+      "y" : 20
+    },
+    "toolOptions" : {
+      "scaleAndTranslationState" : {
+        "lastZoomRequest" : 1,
+        "scale" : 1,
+        "translate" : [ 0.172088623046875, 5.228481292724609 ]
+      }
+    },
+    "type" : 1
+  }, {
+    "isPinned" : false,
+    "name" : "UDPSource",
+    "pane" : {
+      "h" : 409,
+      "w" : 710.5,
+      "x" : 20,
+      "y" : 449
+    },
+    "resourceKey" : "source/UDPSource",
+    "type" : 5
+  }, {
+    "isPinned" : false,
+    "name" : "UDP_NOTIFICATION",
+    "pane" : {
+      "h" : 409,
+      "w" : 710.5,
+      "x" : 750.5,
+      "y" : 20
+    },
+    "resourceKey" : "rule/UDP_NOTIFICATION",
+    "type" : 3
+  }, {
+    "isPinned" : false,
+    "name" : "publishToUDP",
+    "pane" : {
+      "h" : 409,
+      "w" : 710.5,
+      "x" : 750.5,
+      "y" : 449
+    },
+    "resourceKey" : "procedure/publishToUDP",
+    "type" : 24
+  }, {
+    "isPinned" : false,
+    "name" : "Log Records Query",
+    "pane" : {
+      "h" : 435,
+      "w" : 600,
+      "x" : 20,
+      "y" : 880
+    },
+    "type" : 18
+  } ],
+  "type" : "dev",
+  "views" : [ {
+    "name" : "Main",
+    "projectToolKeys" : [ "graph/Project Resource Graph", "subsourceeditor/UDPSource", "cmeditorrule/UDP_NOTIFICATION", "cmeditorprocedure/publishToUDP", "logquery/Log Records Query" ]
+  } ]
+}

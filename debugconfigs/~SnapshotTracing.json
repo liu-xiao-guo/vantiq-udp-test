@@ -1,0 +1,7 @@
+{
+  "isGlobal" : false,
+  "name" : "~SnapshotTracing",
+  "resources" : [ "/rules/UDP_NOTIFICATION" ],
+  "type" : "trace",
+  "value" : "enabled"
+}

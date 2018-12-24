@@ -1,0 +1,10 @@
+RULE UDP_NOTIFICATION
+
+WHEN MESSAGE ARRIVES FROM UDPSource AS message
+try {
+    // Logging the message, could do anything else here like insert into table, etc...
+    log.info(message.toString())
+} catch (error) {
+    // Catching any errors and throwing the exception.
+    exception(error.code, error.message)
+}
